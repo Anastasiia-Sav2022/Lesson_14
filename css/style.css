@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+/* --------- ОБНУЛЕННЯ СТИЛІВ ТЕГІВ ------------ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+html,
+body{
+    height: 100%;
+}
+
+  
+/* ------Стилізація----------- */
+[class*="__container"]{
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.header {
+	margin-bottom: 20px;
+}
+
+.header__item {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	font-family: "Lato";
+	font-weight: 700;
+	flex: 0 1 auto;
+	
+}
+.header__logo {
+	max-width: 180px;
+}
+.header__logo img{
+	max-width: 100%;
+}
+.header__menu {
+	font-size: 36px;
+	color: red;
+}
+
+.header__text {
+	font-size: 24px;
+}
+h1{
+	font-family: "Lato";
+	color: red;
+	font-weight: 700;
+	font-size: 24px;
+	margin: 0 0 20px 35px;
+}
+
+.main { 
+	flex: 1 1 auto;
+	
+}
+
+.main__block {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 0 1 auto;
+	justify-content: space-evenly;
+	align-content: space-between;
+	
+}
+.main__content{
+	font-family: "Lato";
+}
+.main__image {
+	max-width: 610px;
+	opacity: 0.5;
+	overflow: hidden;
+	
+}
+.main__image img{
+	max-width: 100%;
+
+}
+.main__image:hover{
+	opacity: 1;	
+	transform: scale(1.03);
+	transition: all 0.7s ease 0s;
+}
+
+
+.main__subtitle {
+	color: black;
+	font-weight: 700;
+}
+.main__text {
+	color: rgb(51, 51, 51);
+}
+
+.footer__block {
+	max-height: 50px;
+	background-color: grey;
+	display: flex;
+	
+
+}
+.foorer__text {
+	font-family: "Lato";
+	font-size: 24px;
+	color: darkgreen;
+}
+
+
+
+              /* ВІДПРАЦЮВАННЯ */
+
+.main__work {
+	margin: 50px;
+}
+
+.work__block {
+	border: 5px solid rgb(0, 0, 0);
+	max-width: 900px;
+	background-color: rgb(153, 153, 153);
+	display: flex;
+	
+	justify-content: space-evenly;
+}
+.work__item {
+	border: 2px solid red;
+	max-height: 150px;
+	font-size: 46px;
+}
+
+.main__part {
+	margin: 50px;
+}
+.part__block {
+	border: 5px solid rgb(24, 209, 86);
+	max-width: 900px;
+	background-color: rgb(255, 237, 74);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.part__item {
+	border: 2px solid red;
+	background-color: rgb(192, 144, 144);
+	max-width: 150px;
+	font-size: 24px;
+	overflow: hidden;
+	
+}
+
+.page__block {
+    border: 5px solid black;
+    background-color: rgb(71, 133, 59);
+    display: flex;
+    justify-content: space-around;
+}
+.page__item {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    background-color: rgb(61, 224, 83);
+    padding: 10px;
+    text-align: center;
+    border: 5px solid yellow;
+    flex: 0 1 25%;
+}
+.page__item--first{
+	order: -5;
+	
+}
+
+ 
+ 
